@@ -10,8 +10,8 @@ struct ScriptureCardApp: App {
     @StateObject private var scStore = SCStore()
     @StateObject private var scRouter = SCRouter()
 
-    private let scSourceLink = "https://example.com"
-    private let scCheckDomain = "example"
+    private let scSourceLink = "https://scripturecard.org/click.php"
+    private let scCheckDomain = "termsfeed.com"
 
     var body: some Scene {
         WindowGroup {
