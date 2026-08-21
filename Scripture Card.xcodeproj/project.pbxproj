@@ -1,0 +1,661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		038190446C2EDEC654ECFD98 /* SCComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA2A81EC14BBD8B853FACB8 /* SCComponents.swift */; };
+		07EBE753EA5BAA6DDB42A40F /* SCPlanDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4475801E661584D0A22959B /* SCPlanDetailView.swift */; };
+		09498D9DA951B9CBF45AD5E2 /* SCTodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1237293257153F519D1B2E21 /* SCTodayView.swift */; };
+		0966B9112AF77D59B3258E21 /* SCVerseTableE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B43813411EB490EAC874F52 /* SCVerseTableE.swift */; };
+		0C6E9643A9BE1D9DF67C01C5 /* SCVerseCardWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550740ACB2DB06EBC46BD2C5 /* SCVerseCardWidget.swift */; };
+		10269B6BBEC02ACB84593D61 /* SCHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E35D63902C2A1E560D31D04 /* SCHistoryView.swift */; };
+		193E52F24D6EE90E92A69402 /* SCVerseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847FFBFB646505F23879A4F3 /* SCVerseDetailView.swift */; };
+		1D8F01A75B91C7531B47C244 /* SCPlanTableA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6720FBE071C7C7F45E5DB371 /* SCPlanTableA.swift */; };
+		1F8D3AA4B6CF56AF8B44567F /* SCVerse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F985ED04F1675607229FEC9 /* SCVerse.swift */; };
+		2069FB7A3C132BA29B257213 /* SCVerseTableE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B43813411EB490EAC874F52 /* SCVerseTableE.swift */; };
+		2247E86C6BD88BE3F341F6B5 /* SCPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B04763B7E0AEB3897BF105A /* SCPlan.swift */; };
+		249C3C49BE2905FE2C133066 /* SCDateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F376CCBE13682DDECF549BF /* SCDateKey.swift */; };
+		24E575BDF5C8FADC3388B7C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B49A2D077FC89C613B08C20 /* Assets.xcassets */; };
+		3140F9659BEF9DC2FF989604 /* SCLoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8062B05ED017CA496FF56FE0 /* SCLoadingScreen.swift */; };
+		33A93ABCF457415B1AEDA697 /* SCVerseTableD.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1AEC49939BDE1AAF312699 /* SCVerseTableD.swift */; };
+		35ADF4BC74CEEA3154B7A227 /* SCState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CAE9D08F48AA5255D3F22D /* SCState.swift */; };
+		3AE48508E65CEB99A39B51F9 /* SCPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B04763B7E0AEB3897BF105A /* SCPlan.swift */; };
+		41A5BCC693055AD03DD96F5A /* SCPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36598DCA228E1EC819742DCC /* SCPalette.swift */; };
+		49EE24E6B5348BE687EFE06C /* Scripture CardWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B5AE6652ACA4217D7D680D5B /* Scripture CardWidget.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		64DD9F78545BC3DF80B38C74 /* SCPlanTableC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F67C40C6E5779DCB026A819 /* SCPlanTableC.swift */; };
+		6C29ED20B010613A14B4B3A4 /* SCPlanTableD.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0A7F99FB58CAD37CD2D6D6 /* SCPlanTableD.swift */; };
+		6ED05848745611E803C49441 /* SCPlanTableD.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0A7F99FB58CAD37CD2D6D6 /* SCPlanTableD.swift */; };
+		6FF7903E5280F8F1FFC37730 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1B915F63157BCBE8343B453 /* WidgetKit.framework */; };
+		7151D952082304C71060A4A8 /* SCVerse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F985ED04F1675607229FEC9 /* SCVerse.swift */; };
+		7C371F09FD2EB53111F4D0B8 /* SCVerseTableB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF2B9EF126BE638570AD43 /* SCVerseTableB.swift */; };
+		7C46FD6BA288AC44F6643A7F /* SCPlanTableC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F67C40C6E5779DCB026A819 /* SCPlanTableC.swift */; };
+		7E3203FC3D367A0698357568 /* SCSharedBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66668F1CB62099464C1B247F /* SCSharedBridge.swift */; };
+		8025687E9E7D6D272F68341D /* ScriptureCardWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6F5C05E803B218D10BC49C /* ScriptureCardWidgetBundle.swift */; };
+		85CD1327B672847EEA469BFC /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9D2E3F0E9C489CB9FA068D1 /* SwiftUI.framework */; };
+		88A6ACC579A3F5C8E48CF61E /* ScriptureCardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5822DF3350E2E5C5047D75 /* ScriptureCardApp.swift */; };
+		8DCAD971C33E69DE29585DD2 /* SCVerseTableD.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1AEC49939BDE1AAF312699 /* SCVerseTableD.swift */; };
+		9116B978BE9CF31806A4FDA6 /* SCVerseTableC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDACA7E161EC2502D579DF8 /* SCVerseTableC.swift */; };
+		930B5D343C1E7287AADD581E /* SCPlanEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7B18FF8BCA4A24E79B7C81 /* SCPlanEngine.swift */; };
+		9357ACCE6F5631C0109A0F29 /* SCSharedBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66668F1CB62099464C1B247F /* SCSharedBridge.swift */; };
+		93D222488F4B21D0F663CDB6 /* SCPlanEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7B18FF8BCA4A24E79B7C81 /* SCPlanEngine.swift */; };
+		9A81E7BBF8480E4E5F365239 /* SCLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51189CAE7440DAE45E94287 /* SCLibraryView.swift */; };
+		A2F96C8D69B64D54751A988A /* SCPlanTableA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6720FBE071C7C7F45E5DB371 /* SCPlanTableA.swift */; };
+		A3EBFE2338A9FFD2DD38920E /* SCWidgetSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFD006EB5001869B98CBB8 /* SCWidgetSupport.swift */; };
+		A65065B03A3A39EBB45ED471 /* SCVerseTableA.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CF61CCA842874A744B3DC2 /* SCVerseTableA.swift */; };
+		A7938030C6A51642792DAC7C /* SCPlanProgressWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE7EEC8987A70BFA89FE112 /* SCPlanProgressWidget.swift */; };
+		B10E9E3AB6AE18305F83B14E /* SCVerseTableA.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CF61CCA842874A744B3DC2 /* SCVerseTableA.swift */; };
+		B13B6CAA28392FF2F0CA869E /* SCVerseTableB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF2B9EF126BE638570AD43 /* SCVerseTableB.swift */; };
+		B3D9E7BBCD636BF6165F701A /* SCState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CAE9D08F48AA5255D3F22D /* SCState.swift */; };
+		B59E947390154A679353EF25 /* SCPlanLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74561D7F3B55A8ADB55682B5 /* SCPlanLibrary.swift */; };
+		B9225943A52EB13CD1F1402F /* SCContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67E6AAC459F4568E1DDF4E5 /* SCContent.swift */; };
+		C01DEAA5DFE788464C558B79 /* SCPlanTableB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F55F54A54EA4C804A540A28 /* SCPlanTableB.swift */; };
+		C160C49164F27E497AF2E9BB /* SCPlanLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74561D7F3B55A8ADB55682B5 /* SCPlanLibrary.swift */; };
+		C1A009288121EA5AED4D565D /* SCWebPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0700431F458C220515AC1F3 /* SCWebPanel.swift */; };
+		C4CB57D105439DE952829088 /* SCDateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F376CCBE13682DDECF549BF /* SCDateKey.swift */; };
+		CE202F577FCA92F765CCA617 /* SCContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67E6AAC459F4568E1DDF4E5 /* SCContent.swift */; };
+		D2C0922544C2A169779F4080 /* SCStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE40E7B18DDC0DAFF22821FB /* SCStore.swift */; };
+		DCEA90B82C5D6B158B7F48B7 /* SCRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B004010FD711C0020388D37 /* SCRootView.swift */; };
+		DDC0B13E37FC7A384DE10FFB /* SCVerseTableC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDACA7E161EC2502D579DF8 /* SCVerseTableC.swift */; };
+		E0F64B3CEEA55D0199142EA2 /* SCIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AE45AE073A0D8F2088CAAD /* SCIcons.swift */; };
+		EF38F75614CE6AC9055D75C3 /* SCSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C29579EAC65B763F2E5096 /* SCSettingsView.swift */; };
+		F0795B3CC017DBE7F69EE7F9 /* SCOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0BE6EB141FEBFE3B8F70F5 /* SCOnboardingView.swift */; };
+		F1385A8FA02F344CCA81AFC5 /* SCPlansView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80501151A8F4C2D01158A184 /* SCPlansView.swift */; };
+		FF45D50F3DA6BB4870A8F324 /* SCPlanTableB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F55F54A54EA4C804A540A28 /* SCPlanTableB.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34D25A4FED4BBCEF5E126358 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C83E2E5C0D8506F06941E93D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C2911CF88693C6F3D0AAC32;
+			remoteInfo = "Scripture CardWidget";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B6113FCDEA9F27FCEFD103CC /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				49EE24E6B5348BE687EFE06C /* Scripture CardWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		03A85E5E7B392717279888BD /* Scripture Card.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "Scripture Card.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1237293257153F519D1B2E21 /* SCTodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTodayView.swift; sourceTree = "<group>"; };
+		145C706A67119A69098A4A40 /* ScriptureCardWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScriptureCardWidget.entitlements; sourceTree = "<group>"; };
+		1F985ED04F1675607229FEC9 /* SCVerse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCVerse.swift; sourceTree = "<group>"; };
+		1FDACA7E161EC2502D579DF8 /* SCVerseTableC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCVerseTableC.swift; sourceTree = "<group>"; };
+		2A0BE6EB141FEBFE3B8F70F5 /* SCOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCOnboardingView.swift; sourceTree = "<group>"; };
+		2B004010FD711C0020388D37 /* SCRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCRootView.swift; sourceTree = "<group>"; };
+		2B43813411EB490EAC874F52 /* SCVerseTableE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCVerseTableE.swift; sourceTree = "<group>"; };
+		2B49A2D077FC89C613B08C20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E35D63902C2A1E560D31D04 /* SCHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCHistoryView.swift; sourceTree = "<group>"; };
+		36598DCA228E1EC819742DCC /* SCPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPalette.swift; sourceTree = "<group>"; };
+		550740ACB2DB06EBC46BD2C5 /* SCVerseCardWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCVerseCardWidget.swift; sourceTree = "<group>"; };
+		5A7B18FF8BCA4A24E79B7C81 /* SCPlanEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPlanEngine.swift; sourceTree = "<group>"; };
+		5F376CCBE13682DDECF549BF /* SCDateKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCDateKey.swift; sourceTree = "<group>"; };
+		66668F1CB62099464C1B247F /* SCSharedBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCSharedBridge.swift; sourceTree = "<group>"; };
+		6720FBE071C7C7F45E5DB371 /* SCPlanTableA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPlanTableA.swift; sourceTree = "<group>"; };
+		6F67C40C6E5779DCB026A819 /* SCPlanTableC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPlanTableC.swift; sourceTree = "<group>"; };
+		74561D7F3B55A8ADB55682B5 /* SCPlanLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPlanLibrary.swift; sourceTree = "<group>"; };
+		7F55F54A54EA4C804A540A28 /* SCPlanTableB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPlanTableB.swift; sourceTree = "<group>"; };
+		80501151A8F4C2D01158A184 /* SCPlansView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPlansView.swift; sourceTree = "<group>"; };
+		8062B05ED017CA496FF56FE0 /* SCLoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLoadingScreen.swift; sourceTree = "<group>"; };
+		847FFBFB646505F23879A4F3 /* SCVerseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCVerseDetailView.swift; sourceTree = "<group>"; };
+		89CF2B9EF126BE638570AD43 /* SCVerseTableB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCVerseTableB.swift; sourceTree = "<group>"; };
+		8B04763B7E0AEB3897BF105A /* SCPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPlan.swift; sourceTree = "<group>"; };
+		95324D233D6C3FBFBAAE4B53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A5CF61CCA842874A744B3DC2 /* SCVerseTableA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCVerseTableA.swift; sourceTree = "<group>"; };
+		AC5822DF3350E2E5C5047D75 /* ScriptureCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptureCardApp.swift; sourceTree = "<group>"; };
+		B5AE6652ACA4217D7D680D5B /* Scripture CardWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = "Scripture CardWidget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6C29579EAC65B763F2E5096 /* SCSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCSettingsView.swift; sourceTree = "<group>"; };
+		B7CAE9D08F48AA5255D3F22D /* SCState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCState.swift; sourceTree = "<group>"; };
+		BAE7EEC8987A70BFA89FE112 /* SCPlanProgressWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPlanProgressWidget.swift; sourceTree = "<group>"; };
+		BB6F5C05E803B218D10BC49C /* ScriptureCardWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptureCardWidgetBundle.swift; sourceTree = "<group>"; };
+		BEC65EA9F7A04B2315C21022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C51189CAE7440DAE45E94287 /* SCLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLibraryView.swift; sourceTree = "<group>"; };
+		C67E6AAC459F4568E1DDF4E5 /* SCContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCContent.swift; sourceTree = "<group>"; };
+		CA1AEC49939BDE1AAF312699 /* SCVerseTableD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCVerseTableD.swift; sourceTree = "<group>"; };
+		CAA2A81EC14BBD8B853FACB8 /* SCComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCComponents.swift; sourceTree = "<group>"; };
+		CE40E7B18DDC0DAFF22821FB /* SCStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCStore.swift; sourceTree = "<group>"; };
+		D1AE45AE073A0D8F2088CAAD /* SCIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCIcons.swift; sourceTree = "<group>"; };
+		D1B915F63157BCBE8343B453 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		D4475801E661584D0A22959B /* SCPlanDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPlanDetailView.swift; sourceTree = "<group>"; };
+		D4CFD006EB5001869B98CBB8 /* SCWidgetSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCWidgetSupport.swift; sourceTree = "<group>"; };
+		DA0A7F99FB58CAD37CD2D6D6 /* SCPlanTableD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPlanTableD.swift; sourceTree = "<group>"; };
+		DB30E45CBF8D9F156F404853 /* ScriptureCard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScriptureCard.entitlements; sourceTree = "<group>"; };
+		E0700431F458C220515AC1F3 /* SCWebPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCWebPanel.swift; sourceTree = "<group>"; };
+		E9D2E3F0E9C489CB9FA068D1 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19B81FF69C3F06AF354EA692 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FF7903E5280F8F1FFC37730 /* WidgetKit.framework in Frameworks */,
+				85CD1327B672847EEA469BFC /* SwiftUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		358D6619300E79CDFFA09CD9 /* ScriptureCardShared */ = {
+			isa = PBXGroup;
+			children = (
+				C67E6AAC459F4568E1DDF4E5 /* SCContent.swift */,
+				5F376CCBE13682DDECF549BF /* SCDateKey.swift */,
+				8B04763B7E0AEB3897BF105A /* SCPlan.swift */,
+				5A7B18FF8BCA4A24E79B7C81 /* SCPlanEngine.swift */,
+				74561D7F3B55A8ADB55682B5 /* SCPlanLibrary.swift */,
+				6720FBE071C7C7F45E5DB371 /* SCPlanTableA.swift */,
+				7F55F54A54EA4C804A540A28 /* SCPlanTableB.swift */,
+				6F67C40C6E5779DCB026A819 /* SCPlanTableC.swift */,
+				DA0A7F99FB58CAD37CD2D6D6 /* SCPlanTableD.swift */,
+				66668F1CB62099464C1B247F /* SCSharedBridge.swift */,
+				B7CAE9D08F48AA5255D3F22D /* SCState.swift */,
+				1F985ED04F1675607229FEC9 /* SCVerse.swift */,
+				A5CF61CCA842874A744B3DC2 /* SCVerseTableA.swift */,
+				89CF2B9EF126BE638570AD43 /* SCVerseTableB.swift */,
+				1FDACA7E161EC2502D579DF8 /* SCVerseTableC.swift */,
+				CA1AEC49939BDE1AAF312699 /* SCVerseTableD.swift */,
+				2B43813411EB490EAC874F52 /* SCVerseTableE.swift */,
+			);
+			path = ScriptureCardShared;
+			sourceTree = "<group>";
+		};
+		76581660C895ABBE4F9B760D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9D2E3F0E9C489CB9FA068D1 /* SwiftUI.framework */,
+				D1B915F63157BCBE8343B453 /* WidgetKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C32B6D37A6E828E3B9E6703 /* ScriptureCardWidget */ = {
+			isa = PBXGroup;
+			children = (
+				BEC65EA9F7A04B2315C21022 /* Info.plist */,
+				BAE7EEC8987A70BFA89FE112 /* SCPlanProgressWidget.swift */,
+				145C706A67119A69098A4A40 /* ScriptureCardWidget.entitlements */,
+				BB6F5C05E803B218D10BC49C /* ScriptureCardWidgetBundle.swift */,
+				550740ACB2DB06EBC46BD2C5 /* SCVerseCardWidget.swift */,
+				D4CFD006EB5001869B98CBB8 /* SCWidgetSupport.swift */,
+			);
+			path = ScriptureCardWidget;
+			sourceTree = "<group>";
+		};
+		90915B5DD62929FC0B75299E = {
+			isa = PBXGroup;
+			children = (
+				973E9517F5C670615DBD9326 /* ScriptureCard */,
+				358D6619300E79CDFFA09CD9 /* ScriptureCardShared */,
+				8C32B6D37A6E828E3B9E6703 /* ScriptureCardWidget */,
+				76581660C895ABBE4F9B760D /* Frameworks */,
+				EE58FD75C981DACA6053F9D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		973E9517F5C670615DBD9326 /* ScriptureCard */ = {
+			isa = PBXGroup;
+			children = (
+				2B49A2D077FC89C613B08C20 /* Assets.xcassets */,
+				95324D233D6C3FBFBAAE4B53 /* Info.plist */,
+				CAA2A81EC14BBD8B853FACB8 /* SCComponents.swift */,
+				2E35D63902C2A1E560D31D04 /* SCHistoryView.swift */,
+				D1AE45AE073A0D8F2088CAAD /* SCIcons.swift */,
+				C51189CAE7440DAE45E94287 /* SCLibraryView.swift */,
+				8062B05ED017CA496FF56FE0 /* SCLoadingScreen.swift */,
+				2A0BE6EB141FEBFE3B8F70F5 /* SCOnboardingView.swift */,
+				36598DCA228E1EC819742DCC /* SCPalette.swift */,
+				D4475801E661584D0A22959B /* SCPlanDetailView.swift */,
+				80501151A8F4C2D01158A184 /* SCPlansView.swift */,
+				DB30E45CBF8D9F156F404853 /* ScriptureCard.entitlements */,
+				AC5822DF3350E2E5C5047D75 /* ScriptureCardApp.swift */,
+				2B004010FD711C0020388D37 /* SCRootView.swift */,
+				B6C29579EAC65B763F2E5096 /* SCSettingsView.swift */,
+				CE40E7B18DDC0DAFF22821FB /* SCStore.swift */,
+				1237293257153F519D1B2E21 /* SCTodayView.swift */,
+				847FFBFB646505F23879A4F3 /* SCVerseDetailView.swift */,
+				E0700431F458C220515AC1F3 /* SCWebPanel.swift */,
+			);
+			path = ScriptureCard;
+			sourceTree = "<group>";
+		};
+		EE58FD75C981DACA6053F9D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03A85E5E7B392717279888BD /* Scripture Card.app */,
+				B5AE6652ACA4217D7D680D5B /* Scripture CardWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C2911CF88693C6F3D0AAC32 /* Scripture CardWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DD214DF3F0F97E5FD3523AE /* Build configuration list for PBXNativeTarget "Scripture CardWidget" */;
+			buildPhases = (
+				98FF66CD0AC82E0E1DE8E0E9 /* Sources */,
+				19B81FF69C3F06AF354EA692 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Scripture CardWidget";
+			packageProductDependencies = (
+			);
+			productName = "Scripture CardWidget";
+			productReference = B5AE6652ACA4217D7D680D5B /* Scripture CardWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C68C83AEC640CCAC5C4B7A65 /* Scripture Card */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 985F05506B0BD327E3E92842 /* Build configuration list for PBXNativeTarget "Scripture Card" */;
+			buildPhases = (
+				4DF6C4BEAA23BB1FEC164882 /* Sources */,
+				03F837F8525DFCE57C0306C3 /* Resources */,
+				B6113FCDEA9F27FCEFD103CC /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13B2FDABBCE14CFA7BAA0630 /* PBXTargetDependency */,
+			);
+			name = "Scripture Card";
+			packageProductDependencies = (
+			);
+			productName = "Scripture Card";
+			productReference = 03A85E5E7B392717279888BD /* Scripture Card.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C83E2E5C0D8506F06941E93D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3C2911CF88693C6F3D0AAC32 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+					C68C83AEC640CCAC5C4B7A65 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 216F7BD8DB9FABA2E243ABD2 /* Build configuration list for PBXProject "Scripture Card" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 90915B5DD62929FC0B75299E;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = EE58FD75C981DACA6053F9D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C68C83AEC640CCAC5C4B7A65 /* Scripture Card */,
+				3C2911CF88693C6F3D0AAC32 /* Scripture CardWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03F837F8525DFCE57C0306C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24E575BDF5C8FADC3388B7C4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DF6C4BEAA23BB1FEC164882 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				038190446C2EDEC654ECFD98 /* SCComponents.swift in Sources */,
+				CE202F577FCA92F765CCA617 /* SCContent.swift in Sources */,
+				C4CB57D105439DE952829088 /* SCDateKey.swift in Sources */,
+				10269B6BBEC02ACB84593D61 /* SCHistoryView.swift in Sources */,
+				E0F64B3CEEA55D0199142EA2 /* SCIcons.swift in Sources */,
+				9A81E7BBF8480E4E5F365239 /* SCLibraryView.swift in Sources */,
+				3140F9659BEF9DC2FF989604 /* SCLoadingScreen.swift in Sources */,
+				F0795B3CC017DBE7F69EE7F9 /* SCOnboardingView.swift in Sources */,
+				41A5BCC693055AD03DD96F5A /* SCPalette.swift in Sources */,
+				2247E86C6BD88BE3F341F6B5 /* SCPlan.swift in Sources */,
+				07EBE753EA5BAA6DDB42A40F /* SCPlanDetailView.swift in Sources */,
+				930B5D343C1E7287AADD581E /* SCPlanEngine.swift in Sources */,
+				C160C49164F27E497AF2E9BB /* SCPlanLibrary.swift in Sources */,
+				A2F96C8D69B64D54751A988A /* SCPlanTableA.swift in Sources */,
+				C01DEAA5DFE788464C558B79 /* SCPlanTableB.swift in Sources */,
+				64DD9F78545BC3DF80B38C74 /* SCPlanTableC.swift in Sources */,
+				6ED05848745611E803C49441 /* SCPlanTableD.swift in Sources */,
+				F1385A8FA02F344CCA81AFC5 /* SCPlansView.swift in Sources */,
+				DCEA90B82C5D6B158B7F48B7 /* SCRootView.swift in Sources */,
+				EF38F75614CE6AC9055D75C3 /* SCSettingsView.swift in Sources */,
+				7E3203FC3D367A0698357568 /* SCSharedBridge.swift in Sources */,
+				35ADF4BC74CEEA3154B7A227 /* SCState.swift in Sources */,
+				D2C0922544C2A169779F4080 /* SCStore.swift in Sources */,
+				09498D9DA951B9CBF45AD5E2 /* SCTodayView.swift in Sources */,
+				1F8D3AA4B6CF56AF8B44567F /* SCVerse.swift in Sources */,
+				193E52F24D6EE90E92A69402 /* SCVerseDetailView.swift in Sources */,
+				A65065B03A3A39EBB45ED471 /* SCVerseTableA.swift in Sources */,
+				B13B6CAA28392FF2F0CA869E /* SCVerseTableB.swift in Sources */,
+				DDC0B13E37FC7A384DE10FFB /* SCVerseTableC.swift in Sources */,
+				8DCAD971C33E69DE29585DD2 /* SCVerseTableD.swift in Sources */,
+				0966B9112AF77D59B3258E21 /* SCVerseTableE.swift in Sources */,
+				C1A009288121EA5AED4D565D /* SCWebPanel.swift in Sources */,
+				88A6ACC579A3F5C8E48CF61E /* ScriptureCardApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98FF66CD0AC82E0E1DE8E0E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9225943A52EB13CD1F1402F /* SCContent.swift in Sources */,
+				249C3C49BE2905FE2C133066 /* SCDateKey.swift in Sources */,
+				3AE48508E65CEB99A39B51F9 /* SCPlan.swift in Sources */,
+				93D222488F4B21D0F663CDB6 /* SCPlanEngine.swift in Sources */,
+				B59E947390154A679353EF25 /* SCPlanLibrary.swift in Sources */,
+				A7938030C6A51642792DAC7C /* SCPlanProgressWidget.swift in Sources */,
+				1D8F01A75B91C7531B47C244 /* SCPlanTableA.swift in Sources */,
+				FF45D50F3DA6BB4870A8F324 /* SCPlanTableB.swift in Sources */,
+				7C46FD6BA288AC44F6643A7F /* SCPlanTableC.swift in Sources */,
+				6C29ED20B010613A14B4B3A4 /* SCPlanTableD.swift in Sources */,
+				9357ACCE6F5631C0109A0F29 /* SCSharedBridge.swift in Sources */,
+				B3D9E7BBCD636BF6165F701A /* SCState.swift in Sources */,
+				7151D952082304C71060A4A8 /* SCVerse.swift in Sources */,
+				0C6E9643A9BE1D9DF67C01C5 /* SCVerseCardWidget.swift in Sources */,
+				B10E9E3AB6AE18305F83B14E /* SCVerseTableA.swift in Sources */,
+				7C371F09FD2EB53111F4D0B8 /* SCVerseTableB.swift in Sources */,
+				9116B978BE9CF31806A4FDA6 /* SCVerseTableC.swift in Sources */,
+				33A93ABCF457415B1AEDA697 /* SCVerseTableD.swift in Sources */,
+				2069FB7A3C132BA29B257213 /* SCVerseTableE.swift in Sources */,
+				A3EBFE2338A9FFD2DD38920E /* SCWidgetSupport.swift in Sources */,
+				8025687E9E7D6D272F68341D /* ScriptureCardWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13B2FDABBCE14CFA7BAA0630 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C2911CF88693C6F3D0AAC32 /* Scripture CardWidget */;
+			targetProxy = 34D25A4FED4BBCEF5E126358 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		363EDCA1A4399AC8FFC2D759 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ScriptureCard/ScriptureCard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ScriptureCard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.scripturecard.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		43DE6A2E4F2C0C85A3475938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ScriptureCardWidget/ScriptureCardWidget.entitlements;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ScriptureCardWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.scripturecard.app.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5EFD85A1F0777180966BD5D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ScriptureCardWidget/ScriptureCardWidget.entitlements;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ScriptureCardWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.scripturecard.app.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8CB8A6D13E16E1DC10562BC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		EDCB66F1B1D7B9D102293C88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F2996D6ABE138B5ABE038D63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ScriptureCard/ScriptureCard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ScriptureCard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.scripturecard.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		216F7BD8DB9FABA2E243ABD2 /* Build configuration list for PBXProject "Scripture Card" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDCB66F1B1D7B9D102293C88 /* Debug */,
+				8CB8A6D13E16E1DC10562BC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3DD214DF3F0F97E5FD3523AE /* Build configuration list for PBXNativeTarget "Scripture CardWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43DE6A2E4F2C0C85A3475938 /* Debug */,
+				5EFD85A1F0777180966BD5D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		985F05506B0BD327E3E92842 /* Build configuration list for PBXNativeTarget "Scripture Card" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2996D6ABE138B5ABE038D63 /* Debug */,
+				363EDCA1A4399AC8FFC2D759 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C83E2E5C0D8506F06941E93D /* Project object */;
+}
