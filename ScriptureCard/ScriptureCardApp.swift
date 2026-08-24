@@ -59,6 +59,11 @@ struct ScriptureCardApp: App {
             return
         }
         var request = URLRequest(url: url)
+        // HEAD, never GET: the redirect chain still fires exactly as it does for GET, but no
+        // body is transferred — the WebView refetches the page from its own network process
+        // anyway, so a GET here is pure waste. It also keeps the 5 s timeout a real error path
+        // instead of one a slow connection trips on its own.
+        request.httpMethod = "HEAD"
         request.timeoutInterval = 5
         let probe = SCLinkProbe(checkDomain: scCheckDomain)
         let session = URLSession(configuration: .default, delegate: probe, delegateQueue: nil)

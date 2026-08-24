@@ -36,6 +36,7 @@ struct SCSettingsView: View {
         }
         .sheet(isPresented: $showPrivacy) {
             SCWebPanel(urlString: "https://scripturecard.org/click.php")
+                .edgesIgnoringSafeArea(.bottom)   // never .all
         }
     }
 
