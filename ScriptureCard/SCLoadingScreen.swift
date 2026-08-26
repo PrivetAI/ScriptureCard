@@ -1,6 +1,7 @@
 import SwiftUI
 
-/// Shown for at most five seconds while the launch check runs.
+/// Shown while the launch gate is deciding, and again over the panel until its page commits
+/// its first frame — the same screen both times, so the handoff has no visible seam.
 struct SCLoadingScreen: View {
 
     @State private var sweep: Double = 0
