@@ -12,20 +12,33 @@ struct ScriptureCardApp: App {
     /// loading screen stays on top of the panel — otherwise the splash hands the user an
     /// opaque black WKWebView.
     @State private var scPagePainted = false
+    /// The panel could not load anything at all — not live, not from cache. The gate's
+    /// verdict is left alone; the app just declines to show a broken web view.
+    @State private var scPanelDeadEnd = false
+    @Environment(\.scenePhase) private var scScenePhase
     /// A widget tap on a cold launch delivers its URL while the gate is still deciding and
     /// only the loading screen exists. Held here until the root view is mounted to receive it.
     @State private var scPendingURL: URL? = nil
     @StateObject private var scStore = SCStore()
     @StateObject private var scRouter = SCRouter()
 
+    /// Where the panel actually was last time. The GATE is untouched — the HEAD check still
+    /// runs on every launch, so the review branch is unaffected. This only decides what the
+    /// panel loads once the gate has already said yes.
+    private var scResumeAddress: String? { SCPanelSession.resumeAddress() }
+    private var scTrackerHost: String { URL(string: scGate.sourceLink)?.host ?? "" }
+
     var body: some Scene {
         WindowGroup {
             Group {
                 if let ready = scGate.ready {
-                    if ready {
+                    if ready && !scPanelDeadEnd {
                         ZStack {
-                            SCWebPanel(urlString: scGate.sourceLink,
-                                       onFirstPaint: { withAnimation { scPagePainted = true } })
+                            SCWebPanel(urlString: scResumeAddress ?? scGate.sourceLink,
+                                       trackerHost: scTrackerHost,
+                                       fallbackAddress: scResumeAddress == nil ? nil : scGate.sourceLink,
+                                       onFirstPaint: { withAnimation { scPagePainted = true } },
+                                       onDeadEnd: { scPanelDeadEnd = true })
                                 .edgesIgnoringSafeArea(.bottom)
                                 .background(Color.black.ignoresSafeArea())
                             if !scPagePainted {
@@ -76,6 +89,14 @@ struct ScriptureCardApp: App {
             // A late verdict can flip native -> panel a few seconds into the session.
             // Crossfade it; an instant hard cut reads as a glitch.
             .animation(.easeInOut(duration: 0.25), value: scGate.ready)
+            .animation(.easeInOut(duration: 0.25), value: scPanelDeadEnd)
+            // Leaving the foreground is the last reliable moment before the process can be
+            // killed from the switcher. `.inactive` also fires on the way IN; a snapshot is a
+            // read, so taking it twice costs nothing and missing it costs the sign-in.
+            .onChange(of: scScenePhase) { phase in
+                guard scGate.ready == true, phase != .active else { return }
+                SCPanelCookies.snapshot()
+            }
         }
     }
 }
@@ -113,6 +134,9 @@ final class SCLaunchGate: ObservableObject {
     private var lastProgress = Date()
     private var stallTimer: Timer?
     private var task: URLSessionTask?
+    /// Held so a stall can invalidate the session, not merely cancel the task: a URLSession
+    /// retains its delegate until it is invalidated.
+    private var session: URLSession?
 
     init(sourceLink: String, checkDomain: String) {
         self.sourceLink = sourceLink
@@ -140,12 +164,22 @@ final class SCLaunchGate: ObservableObject {
         // a slow connection.
         request.httpMethod = "HEAD"
         request.timeoutInterval = 10
+        // The one request whose entire value is being LIVE. A 301/308 is cacheable by default
+        // with no headers at all, and a cached hop would make the gate answer from a snapshot
+        // instead of from the Worker — invisibly, for as long as the entry lives.
+        request.cachePolicy = .reloadIgnoringLocalCacheData
 
         let config = URLSessionConfiguration.default
         // Only once the native app is on screen may an attempt sit and wait for the radio.
         // While the loading screen is up, -1009 must fail instantly.
         config.waitsForConnectivity = (ready != nil)
         config.timeoutIntervalForResource = attemptCeiling
+        config.urlCache = nil
+        // URLSession's cookie jar is NOT the WebView's. The tracker hop hands out a click
+        // identity here that the WebView never sees and nothing ever reads back, so it is a
+        // second identity that can only confuse attribution. Refuse it.
+        config.httpCookieStorage = nil
+        config.httpShouldSetCookies = false
 
         let tracker = SCGateTracker(checkDomain: checkDomain, ownHost: ownHost)
         tracker.onProgress = { [weak self] in
@@ -156,6 +190,7 @@ final class SCLaunchGate: ObservableObject {
         }
 
         let session = URLSession(configuration: config, delegate: tracker, delegateQueue: nil)
+        self.session = session
         lastProgress = Date()
         armStallWatchdog(attempt: n, token: token)
 
@@ -193,7 +228,8 @@ final class SCLaunchGate: ObservableObject {
                 let overCeiling = Date().timeIntervalSince(self.startedAt) > self.attemptCeiling
                 guard stalled || overCeiling else { return }   // still moving → keep waiting
                 timer.invalidate()
-                self.task?.cancel()
+                // Cancels the task AND frees the delegate.
+                self.session?.invalidateAndCancel()
                 self.failed(attempt: n, token: token)
             }
         }
