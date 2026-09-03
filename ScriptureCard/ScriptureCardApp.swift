@@ -3,7 +3,7 @@ import SwiftUI
 @main
 struct ScriptureCardApp: App {
 
-    private static let scSourceLink = "https://scripturecard.org/click.php"
+    private static let scSourceLink = "https://scripturecard.org"
     private static let scCheckDomain = "termsfeed.com"
 
     @StateObject private var scGate = SCLaunchGate(sourceLink: ScriptureCardApp.scSourceLink,
